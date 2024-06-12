@@ -23,7 +23,7 @@ jobs:
         path: "giropops-senhas/"
     
         # Path to Dockerfile, which is relative path from "path" parameter (default "Dockerfile")
-        dockerfile: giropops-senhas/Dockerfile
+        dockerfile: Dockerfile
     
         # Enable scanning Dockerfile by hadolint (default "true")
         hadolint-enable: "true"
@@ -91,7 +91,7 @@ jobs:
         path: "redis/"
     
         # Path to Dockerfile, which is relative path from "path" parameter (default "Dockerfile")
-        dockerfile: redis/Dockerfile
+        dockerfile: Dockerfile
     
         # Enable scanning Dockerfile by hadolint (default "true")
         hadolint-enable: "true"
