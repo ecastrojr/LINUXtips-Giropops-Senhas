@@ -1,4 +1,4 @@
-- name: Build and scan image - app
+- name: Build and scan image
   uses: dentsusoken/build-and-scan-image@main
   with:
     # Image name and optionally tag in "name:tag" format
@@ -66,7 +66,7 @@
     # Exclude base image vulnerabilities (default "false")
     snyk-exclude-base-image-vulns: "false"
     
-- name: Build and scan image - redis
+- name: Build and scan image
   uses: dentsusoken/build-and-scan-image@main
   with:
     # Image name and optionally tag in "name:tag" format
