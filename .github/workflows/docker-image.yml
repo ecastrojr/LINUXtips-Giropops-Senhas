@@ -20,7 +20,7 @@ jobs:
         tag: "alexgetup/linuxtips-giropops-senhas:1.0"
     
         # Path to base directory to run `docker build` command (default ".")
-        path: "giropops-senhas/"
+        path: "giropops-senhas"
     
         # Path to Dockerfile, which is relative path from "path" parameter (default "Dockerfile")
         dockerfile: Dockerfile
@@ -88,7 +88,7 @@ jobs:
         tag: "alexgetup/redis:1.0"
     
         # Path to base directory to run `docker build` command (default ".")
-        path: "redis/"
+        path: "redis"
     
         # Path to Dockerfile, which is relative path from "path" parameter (default "Dockerfile")
         dockerfile: Dockerfile
