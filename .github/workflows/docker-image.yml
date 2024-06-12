@@ -46,7 +46,7 @@ jobs:
     
         # Fail step if rules with a severity above this level are violated (default "info")
         # Acceptable value is one of (error|warning|info|style|ignore|none)
-        hadolint-severity: none
+        hadolint-severity: error
     
         # Enable scanning image by dockle (default "true")
         dockle-enable: "true"
@@ -114,7 +114,7 @@ jobs:
     
         # Fail step if rules with a severity above this level are violated (default "info")
         # Acceptable value is one of (error|warning|info|style|ignore|none)
-        hadolint-severity: none
+        hadolint-severity: error
     
         # Enable scanning image by dockle (default "true")
         dockle-enable: "true"
