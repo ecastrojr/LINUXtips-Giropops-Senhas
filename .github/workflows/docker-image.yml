@@ -46,7 +46,7 @@ jobs:
         hadolint-severity: error
     
         # Enable scanning image by dockle (default "true")
-        dockle-enable: "false"
+        dockle-enable: "true"
     
         # Dockle version.
         dockle-version: "0.4.3"
@@ -56,7 +56,7 @@ jobs:
         dockle-severity: FATAL
     
         # Enable scanning image by trivy (default "true")
-        trivy-enable: "false"
+        trivy-enable: "true"
     
         # Trivy version.
         trivy-version: "0.23.0"
