@@ -101,9 +101,9 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: ./Dockerfile
+        file: ./giropops-senhas/Dockerfile
         push: true
-        tags: ${{ inputs.tag }}             
+        tags: "alexgetup/linuxtips-giropops-senhas:1.0"             
         
     - name: Build and scan image - REDIS
       uses: dentsusoken/build-and-scan-image@main
@@ -183,6 +183,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: ./Dockerfile
+        file: ./redis/Dockerfile
         push: true
-        tags: ${{ inputs.tag }}      
+        tags: "alexgetup/redis:1.0"      
