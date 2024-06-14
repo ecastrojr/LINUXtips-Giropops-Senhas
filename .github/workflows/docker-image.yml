@@ -182,7 +182,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
-        context: ./redis
-        file: ./Dockerfile
+        context: redis/
         push: true
         tags: "alexgetup/redis:1.0"      
