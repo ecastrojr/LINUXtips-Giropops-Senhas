@@ -28,6 +28,10 @@ jobs:
       with:
         # Image name and optionally tag in "name:tag" format
         tag: "alexgetup/linuxtips-giropops-senhas:1.0"
+
+        docker-username: ${{ secrets.DOCKERHUB_USERNAME }}
+
+        docker-password: ${{ secrets.DOCKERHUB_TOKEN }}
     
         # Path to base directory to run `docker build` command (default ".")
         path: "giropops-senhas"
@@ -110,6 +114,10 @@ jobs:
       with:
         # Image name and optionally tag in "name:tag" format
         tag: "alexgetup/redis:1.0"
+
+        docker-username: ${{ secrets.DOCKERHUB_USERNAME }}
+
+        docker-password: ${{ secrets.DOCKERHUB_TOKEN }}
     
         # Path to base directory to run `docker build` command (default ".")
         path: "redis"
