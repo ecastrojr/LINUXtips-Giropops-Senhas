@@ -1,7 +1,7 @@
-FROM ubuntu:20.04
+FROM cgr.dev/chainguard/wolfi-base:latest
 WORKDIR /giropops-senhas/
-RUN apt-get update && apt-get install --no-install-recommends git=1:2.25.1-1ubuntu3.12 python3-pip=20.0.2-5ubuntu1.10 -y && rm -rf /var/lib/apt/lists/* && git clone https://github.com/badtuxx/giropops-senhas.git . && pip install --no-cache-dir -r requirements.txt
-EXPOSE 80
+RUN apk update && apk add --no-cache --update-cache git=2.45.2-r0 py3.12-pip=24.0-r2 && git clone https://github.com/badtuxx/giropops-senhas.git . && pip install --no-cache-dir -r requirements.txt
+EXPOSE 5000
 WORKDIR /giropops-senhas
 ENV REDIS_HOST=172.17.0.2
 CMD ["flask","run","--host=0.0.0.0"]
